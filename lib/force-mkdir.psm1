@@ -1,4 +1,4 @@
-# Thanks to raydric, this function should be used instead of `mkdir -force`.
+# this function should be used instead of `mkdir -force`.
 #
 # While `mkdir -force` works fine when dealing with regular folders, it behaves
 # strange when using it at registry level. If the target registry key is
