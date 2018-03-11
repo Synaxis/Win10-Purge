@@ -20,21 +20,16 @@ Unblock PowerShell scripts and modules within this directory:
 ## How to use
 
 1. Edit the scripts to fit your need.
-2. Open PowerShell as Administrator 
-3. Change directory to the path cd  C:\Users\YOURNAME\Downloads\Win10-Purge-master  
+2. Open PowerShell
+3. Change directory to the path 
+-> cd  C:\Users\YOURNAME\Downloads\Win10-Purge-master  
 4. Restart Computer
 
-## Startmenu
+## Old Classic StartMenu
 
 [Start is Back]: <http://startisback.com/>
 
-### XBox Wireless Adapter
-
-Apprently running the stock `remove-default-apps` script will cause XBox
-Wireless Adapters to stop functioning. I suspenc one should not remove the XBox
-App when wanting to use one. But I haven't confirmed this yet, and there is a
-workaround to re-enable it afterwards. See
-[#78](https://github.com/W4RH4WK/Debloat-Windows-10/issues/78).
+This is a rework project from https://github.com/W4RH4WK/Debloat-Windows-10/ thank you!
 
 ## Liability
 
