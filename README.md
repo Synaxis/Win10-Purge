@@ -1,6 +1,6 @@
 # Win10-Purge
 
-EDIT: This cause issues in build 1803 or newer , we will fix later
+EDIT: This causes issues in build 1803 or newer , we will fix later
 
 This project is made to improve and fix many issues in Windows 10(Bloatware;Telemetry;Privacy;DefaultApps) 
 
