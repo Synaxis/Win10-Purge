@@ -3,7 +3,7 @@
 # IPs via Windows Firewall.
 #
 # Please note that adding these domains may break certain software like iTunes
-# or Skype. As this issue is location dependent for some domains, they are not
+# or Skype. As this issue is location dependent for some domains they are not
 # commented by default. The domains known to cause issues marked accordingly.
 # Please see the related issue:
 # <https://github.com/W4RH4WK/Debloat-Windows-10/issues/79>
@@ -39,6 +39,89 @@ $domains = @(
     "ad.doubleclick.net"
     "adnexus.net"
     "adnxs.com"
+    "104.87.88.177"
+    "104.89.242.39"
+    "104.96.147.3"
+    "111.221.29.177"
+    "111.221.29.253"
+    "131.253.34.230"
+    "131.253.40.37"
+    "131.253.61.100"
+    "131.253.61.64"
+    "131.253.61.68"
+    "131.253.61.96"
+    "134.170.115.60"
+    "134.170.165.248"
+    "134.170.165.253"
+    "134.170.185.70"
+    "134.170.30.202"
+    "137.116.81.24"
+    "137.117.235.16"
+    "157.55.129.21"
+    "157.55.133.204"
+    "157.55.240.220"
+    "157.56.106.189"
+    "157.56.121.89"
+    "157.56.124.87"
+    "157.56.77.148"
+    "157.56.77.149"
+    "157.56.91.77"
+    "157.56.96.54"
+    "168.63.108.233"
+    "172.230.215.85"
+    "191.232.139.2"
+    "191.232.139.254"
+    "191.232.80.58"
+    "191.232.80.62"
+    "191.237.208.126"
+    "2.22.61.43"
+    "2.22.61.66"
+    "204.79.197.200"
+    "207.46.101.29"
+    "207.46.114.58"
+    "207.46.223.94"
+    "207.68.166.254"
+    "212.30.134.204"
+    "212.30.134.205"
+    "23.102.21.4"
+    "23.204.68.66"
+    "23.205.214.76"
+    "23.218.212.69"
+    "23.223.20.82"
+    "23.36.33.135"
+    "23.48.106.243"
+    "23.57.101.163"
+    "23.57.107.27"
+    "23.99.10.11"
+    "40.77.226.221"
+    "40.77.226.223"
+    "52.167.222.147"
+    "64.4.23.0-64.4.23.255"
+    "64.4.54.22"
+    "64.4.6.100"
+    "65.39.117.230"
+    "65.52.100.11"
+    "65.52.100.7"
+    "65.52.100.9"
+    "65.52.100.91"
+    "65.52.100.92"
+    "65.52.100.93"
+    "65.52.100.94"
+    "65.52.108.103"
+    "65.52.108.254"
+    "65.52.108.29"
+    "65.52.108.33"
+    "65.55.108.23"
+    "65.55.138.114"
+    "65.55.138.126"
+    "65.55.138.186"
+    "65.55.252.63"
+    "65.55.252.71"
+    "65.55.252.92"
+    "65.55.252.93"
+    "65.55.29.238"
+    "65.55.39.10"
+    "77.67.29.176"    
     "ads1.msads.net"
     "ads1.msn.com"
     "ads.msn.com"
@@ -59,7 +142,7 @@ $domains = @(
     "cds26.ams9.msecn.net"
     "choice.microsoft.com"
     "choice.microsoft.com.nsatc.net"
-    "c.msn.com"                                 # can cause issues with Skype
+    "c.msn.com"                           # can cause issues with Skype
     "compatexchange.cloudapp.net"
     "corpext.msitadfs.glbdns2.microsoft.com"
     "corp.sts.microsoft.com"
@@ -139,23 +222,22 @@ $domains = @(
     "www.bingads.microsoft.com"
     "www.go.microsoft.akadns.net"
     "www.msftncsi.com"
-
-    # extra
     "fe2.update.microsoft.com.akadns.net"
     "s0.2mdn.net"
-    "statsfe2.update.microsoft.com.akadns.net",
+    "statsfe2.update.microsoft.com.akadns.net"
     "survey.watson.microsoft.com"
     "view.atdmt.com"
-    "watson.microsoft.com",
+    "watson.microsoft.com"
     "watson.ppe.telemetry.microsoft.com"
-    "watson.telemetry.microsoft.com",
+    "watson.telemetry.microsoft.com"
     "watson.telemetry.microsoft.com.nsatc.net"
     "wes.df.telemetry.microsoft.com"
-    "ui.skype.com",                             # can cause issues with Skype
+    "ui.skype.com"                             # can cause issues with Skype
     "pricelist.skype.com"                       # can cause issues with Skype
     "apps.skype.com"                            # can cause issues with Skype
     "m.hotmail.com"
     "s.gateway.messenger.live.com"              # can cause issues with Skype
+    
 )
 Write-Output "" | Out-File -Encoding ASCII -Append $hosts_file
 foreach ($domain in $domains) {
