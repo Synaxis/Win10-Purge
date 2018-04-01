@@ -101,7 +101,9 @@ $apps = @(
 foreach ($app in $apps) {
     Write-Output "Trying to remove $app"
 
-    Get-AppxPackage -Name $app -AllUsers | Remove-AppxPackage -AllUsers
+    #Get-AppxPackage -Name $app -AllUsers | Remove-AppxPackage -AllUsers
+    Get-AppxPackage -Name $app -Synaxis | Remove-AppxPackage -Synaxis
+
 
     Get-AppXProvisionedPackage -Online |
         Where-Object DisplayName -EQ $app |
