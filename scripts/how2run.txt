@@ -2,31 +2,28 @@
 
 Open PowerShell:
 
-   ``Set-ExecutionPolicy -Scope CurrentUser Unrestricted ``
+     -->   Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 
-Unblock PowerShell scripts and modules within this directory:
+     -->   ls -Recurse *.ps1 | Unblock-File
 
-    `` ls -Recurse *.ps1 | Unblock-File ``
-     ``ls -Recurse *.psm1 | Unblock-File ``
+     -->   ls -Recurse *.psm1 | Unblock-File 
 
 ## How to use
 
-1. Edit the scripts to fit your need.(remember there is no Undo!)
+1- Edit the scripts t your need (Some issues are expected in build 1803)
 
-2. Hit WindowsKey type PowerShell -> rightMouse button -> open as Administrator
+2- WindowsKey -> type PowerShell -> rightClik -> open as Administrator
 
-3. go to scripts folder -> right mouse button -> properties -> copy the local path
-In Powershell type -> cd C:\Users\YOURNAME\Downloads\Win10-Purge-master\scripts
+3- go to scripts folder -> In Powershell type -> cd C:\Users\YOURNAME\Downloads\Win10-Purge-master\scripts
+-->   Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 
-4. type in   Set-ExecutionPolicy -Scope CurrentUser Unrestricted    -> to enable running external scripts
+     -->   ls -Recurse *.ps1 | Unblock-File
 
-5. Type ls -Recurse *.ps1 | Unblock-File then    THEN    ls -Recurse *.psm1 | Unblock-File
+     -->   ls -Recurse *.psm1 | Unblock-File 
 
-6. You can now run the scripts with ``./`` example: ``./defaultApps`` (no backsticks)
+4- You can now run the scripts with ./ example: ./defaultApps
 
-7.Customize your scripts!
+5- Enjoy! Share your improvements! 
 
-8. Enjoy! Share your improvements! 
-
-9. Credtis to WarHawk
+ Credtis to WarHawk
 
