@@ -1,6 +1,10 @@
-## Execution
+## How to use
 
-Open PowerShell:
+1- Edit the scripts
+
+2- WindowsKey ->type PowerShell -> rightClik -> open as Administrator
+
+3- go to scripts folder -> In Powershell type -> cd C:\Users\YOURNAME\Downloads\Win10-Purge-master\scripts
 
      -->   Set-ExecutionPolicy -Scope CurrentUser Unrestricted
 
@@ -8,20 +12,7 @@ Open PowerShell:
 
      -->   ls -Recurse *.psm1 | Unblock-File 
 
-## How to use
-
-1- Edit the scripts t your need (Some issues are expected in build 1803)
-
-2- WindowsKey -> type PowerShell -> rightClik -> open as Administrator
-
-3- go to scripts folder -> In Powershell type -> cd C:\Users\YOURNAME\Downloads\Win10-Purge-master\scripts
--->   Set-ExecutionPolicy -Scope CurrentUser Unrestricted
-
-     -->   ls -Recurse *.ps1 | Unblock-File
-
-     -->   ls -Recurse *.psm1 | Unblock-File 
-
-4- You can now run the scripts with ./ example: ./defaultApps
+4- now run the scripts with " ./ "  example: ./defaultApps
 
 5- Enjoy! Share your improvements! 
 
